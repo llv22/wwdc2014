@@ -378,3 +378,71 @@ struct Card{
 }
 let threeOfSpades = Card(rank: .Three, suit: .Spades);
 let threeOfSpadesDescription = threeOfSpades.simpleDescription();
+
+enum ServerResponse{
+    case Result(String, String);
+    case Error(String);
+}
+
+let success = ServerResponse.Result("6:00 am", "8:09 pm");
+let failure = ServerResponse.Error("Out of cheese");
+
+switch success{
+case let .Result(sunrise, sunset):
+    let serverResponse = "Sunrise is at \(sunrise) and Sunset is at \(sunset).";
+case let .Error(error):
+    let serverResponse = "Failure ... \(error).";
+}
+
+switch failure{
+case let .Result(sunrise, sunset):
+    let serverResponse = "Sunrise is at \(sunrise) and Sunset is at \(sunset).";
+case let .Error(error):
+    let serverResponse = "Failure ... \(error).";
+}
+
+//see protocol/extension of page 55 of the swift programming language
+protocol ExampleProtocol{
+    var simpleDescription: String{
+        get
+    };
+    mutating func adjust();
+}
+
+class SimpleClass: ExampleProtocol{
+    var simpleDescription: String = "A very simple class.";
+    var anotherProperty: Int = 69105;
+    
+    func adjust() {
+        simpleDescription += "Now 100% adjusted.";
+    }
+}
+var a = SimpleClass();
+a.adjust();
+let aDescription = a.simpleDescription;
+
+struct SimpleStructure: ExampleProtocol{
+    var simpleDescription: String = "A very simple structure.";
+    mutating func adjust(){
+        simpleDescription += "(adjusted)";
+    }
+}
+var b = SimpleStructure();
+b.adjust();
+let bDescription = b.simpleDescription;
+
+extension Int: ExampleProtocol{
+    var simpleDescription: String {
+        return "The number \(self)";
+    }
+    mutating func adjust(){
+        self += 42;
+    }
+}
+7.simpleDescription;
+/** immutable value of type "int" only has mutating members named "adjust"
+7.adjust();
+7.simpleDescription;
+*/
+let protocolValue: ExampleProtocol = a;
+protocolValue.simpleDescription;
