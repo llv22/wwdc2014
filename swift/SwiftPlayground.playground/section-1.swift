@@ -446,3 +446,13 @@ extension Int: ExampleProtocol{
 */
 let protocolValue: ExampleProtocol = a;
 protocolValue.simpleDescription;
+
+//see generic of page 60 of the swift programming language
+func repeat<ItemType>(item: ItemType, times: Int) -> [ItemType]{
+    var result = [ItemType]();
+    for i in 0 ..< times{
+        result += item;
+    }
+    return result;
+}
+repeat("knock", 4);
