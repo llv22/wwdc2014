@@ -464,8 +464,7 @@ enum OptionalValue<T>{
 var possibleInteger: OptionalValue<Int> = .None;
 possibleInteger = .Some(100);
 
-func anyCommonElements <T, U where U: Sequence, U: Sequence, T.GeneratorType.Element: Equatable,
-    T.GeneratorType.Element == U.GeneratorType.Element> (lhs: T, rhs: U) -> Bool {
+func anyCommonElements <T, U where T: Sequence, U: Sequence, T.GeneratorType.Element: Equatable, T.GeneratorType.Element == U.GeneratorType.Element> (lhs: T, rhs: U) -> Bool {
         for lhsItem in lhs {
             for rhsItem in rhs {
                 if lhsItem == rhsItem {
@@ -476,3 +475,8 @@ func anyCommonElements <T, U where U: Sequence, U: Sequence, T.GeneratorType.Ele
         return false;
 }
 anyCommonElements([1, 2, 3], [3]);
+
+let stringArray = ["c", "b", "a"];
+var sortedStrings = sorted(stringArray) {
+    $0.uppercaseString < $1.uppercaseString
+}
