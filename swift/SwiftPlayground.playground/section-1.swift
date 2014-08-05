@@ -451,7 +451,8 @@ protocolValue.simpleDescription;
 func repeat<ItemType>(item: ItemType, times: Int) -> [ItemType]{
     var result = [ItemType]();
     for i in 0 ..< times{
-        result += item;
+//        result += item; // migration from DP4 to DP5
+        result.append(item);
     }
     return result;
 }
@@ -464,7 +465,10 @@ enum OptionalValue<T>{
 var possibleInteger: OptionalValue<Int> = .None;
 possibleInteger = .Some(100);
 
-func anyCommonElements <T, U where T: Sequence, U: Sequence, T.GeneratorType.Element: Equatable, T.GeneratorType.Element == U.GeneratorType.Element> (lhs: T, rhs: U) -> Bool {
+//migration from DP4 to DP5
+//func anyCommonElements <T, U where T: Sequence, U: Sequence, T.GeneratorType.Element: Equatable, T.GeneratorType.Element == U.GeneratorType.Element >
+func anyCommonElements <T, U where T: SequenceType, U: SequenceType, T.Generator.Element: Equatable, T.Generator.Element == U.Generator.Element >
+    (lhs: T, rhs: U) -> Bool {
         for lhsItem in lhs {
             for rhsItem in rhs {
                 if lhsItem == rhsItem {
