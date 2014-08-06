@@ -11,28 +11,6 @@ for var l = 1; l < 10; l++
     println(l)
 }
 
-/**
- * recurisve algorithm
- *
-func memoize<T: Hashable, U>( body: (T)->U ) -> (T)->U {
-    var memo = Dictionary<T, U>()
-    return { x in
-        if let q = memo[x] { return q }
-        let r = body(x)
-        memo[x] = r
-        return r
-    }
-}
-
-let fibonacci: (Int)->Double = memoize{
-    fibonacci, n in
-    n < 2 ? Double(n) : fibonacci(n-2) + fibonacci(n-1)
-}
-
-
-fibonacci(3)
-*/
-
 // see string of page 10 - 12 of the swift programming language
 let label = "The width is";
 let width = 94;
