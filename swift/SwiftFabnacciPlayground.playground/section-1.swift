@@ -16,22 +16,22 @@ return r
 }
 }
 
+var fibonacci0: (Int)->Double = { Double($0) }
+fibonacci0 = memoize{
+    (n: Int) in n < 2 ? Double(n) : fibonacci0(n-2) + fibonacci0(n-1)
+}
 /*
 let fibonacci: (Int)->Double = memoize{
-fibonacci, n in
-n < 2 ? Double(n) : fibonacci(n-2) + fibonacci(n-1)
-}
-let fibonacci: (Int)->Int = memoize{
-    fibonacci, n in
-    n < 2 ? n : fibonacci(n-2) + fibonacci(n-1)
+    fibon, n in
+    n < 2 ? Double(n) : fibon(n-2) + fibon(n-1)
 }
 */
-//fibonacci(3)
+fibonacci0(56)
 
 /**
 * recursive algorithm - fail to run successfully, take part 1
-*
-func memoize<T: Hashable, U>( body: (T)->U ) -> (T)->U {
+*/
+func memoize0<T: Hashable, U>( body: (T)->U ) -> (T)->U {
     var memo = Dictionary<T, U>()
     return { x in
         if let q = memo[x] { return q }
@@ -41,14 +41,13 @@ func memoize<T: Hashable, U>( body: (T)->U ) -> (T)->U {
     }
 }
 var fibonacci: (Int)->Double = { Double($0) }
-fibonacci = memoize {
+fibonacci = memoize0 {
     (n: Int) in
     n < 2 ? Double(n) : fibonacci(n-2) + fibonacci(n-1)
 }
-fibonacci(3)
+fibonacci(45)
 
 let φ = fibonacci(45) / fibonacci(44)
-*/
 
 ///**
 //* recursive algorithm - take part 2
