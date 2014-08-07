@@ -21,17 +21,16 @@ let fibonacci: (Int)->Double = memoize{
 fibonacci, n in
 n < 2 ? Double(n) : fibonacci(n-2) + fibonacci(n-1)
 }
-*/
 let fibonacci: (Int)->Int = memoize{
     fibonacci, n in
     n < 2 ? n : fibonacci(n-2) + fibonacci(n-1)
 }
-
+*/
 //fibonacci(3)
 
 /**
 * recursive algorithm - fail to run successfully, take part 1
-*/
+*
 func memoize<T: Hashable, U>( body: (T)->U ) -> (T)->U {
     var memo = Dictionary<T, U>()
     return { x in
@@ -49,6 +48,7 @@ fibonacci = memoize {
 fibonacci(3)
 
 let φ = fibonacci(45) / fibonacci(44)
+*/
 
 ///**
 //* recursive algorithm - take part 2
