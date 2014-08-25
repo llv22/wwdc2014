@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIBarButtonItem* rightButtonItem;
+@property (nonatomic, strong) IBOutlet UILabel* lableItem;
+
 
 @end
 
