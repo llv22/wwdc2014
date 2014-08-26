@@ -25,4 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)popupForPeople:(id)sender{
+    NSLog(@"click people");
+}
+
 @end

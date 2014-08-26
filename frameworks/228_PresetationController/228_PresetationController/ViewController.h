@@ -13,6 +13,7 @@
 @property (nonatomic, strong) IBOutlet UIBarButtonItem* rightButtonItem;
 @property (nonatomic, strong) IBOutlet UILabel* lableItem;
 
+- (IBAction)popupForPeople:(id)sender;
 
 @end
 

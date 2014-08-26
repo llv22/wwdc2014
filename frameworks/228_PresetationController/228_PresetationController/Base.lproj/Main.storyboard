@@ -2,13 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A329f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GYF-96-79e">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="xKR-i2-X68">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HMG-Js-xfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="GYF-96-79e" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Buf-mY-Mxn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -18,8 +16,9 @@
                         <segue destination="B7t-8J-ukb" kind="relationship" relationship="rootViewController" id="HYj-sh-HVf"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMG-Js-xfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="267" y="278.25"/>
+            <point key="canvasLocation" x="-811.5" y="99.75"/>
         </scene>
         <!--Important People-->
         <scene sceneID="aRt-xB-e59">
@@ -30,30 +29,31 @@
                         <viewControllerLayoutGuide type="bottom" id="cJs-kG-ifM"/>
                     </layoutGuides>
                     <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="pLn-d2-Nma">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-XI-mYZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-XI-mYZ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="0.99155618686868685" green="0.99155618686868685" blue="0.99155618686868685" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="143" y="280" width="51" height="26"/>
+                                    <rect key="frame" x="143" y="278" width="114" height="244"/>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.91532337463700442" green="0.45966150068100498" blue="1" alpha="0.62" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="jJD-XI-mYZ" firstAttribute="centerX" secondItem="pLn-d2-Nma" secondAttribute="leading" constant="168" id="8p7-KH-hTP"/>
-                            <constraint firstItem="jJD-XI-mYZ" firstAttribute="centerY" secondItem="Uwy-Zt-T1B" secondAttribute="centerY" constant="228" id="PhN-Cb-F3c"/>
+                            <constraint firstAttribute="centerX" secondItem="jJD-XI-mYZ" secondAttribute="centerX" id="pvs-yU-gOS"/>
+                            <constraint firstAttribute="centerY" secondItem="jJD-XI-mYZ" secondAttribute="centerY" id="w3a-Je-Uhh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="jJD-XI-mYZ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8p7-KH-hTP"/>
-                                <exclude reference="PhN-Cb-F3c"/>
+                                <exclude reference="pvs-yU-gOS"/>
+                                <exclude reference="w3a-Je-Uhh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -61,13 +61,17 @@
                                 <include reference="jJD-XI-mYZ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8p7-KH-hTP"/>
-                                <include reference="PhN-Cb-F3c"/>
+                                <include reference="pvs-yU-gOS"/>
+                                <include reference="w3a-Je-Uhh"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Important People" id="86S-1E-6yp">
-                        <barButtonItem key="rightBarButtonItem" title="People" id="ttN-5e-wWU"/>
+                        <barButtonItem key="rightBarButtonItem" title="People" id="ttN-5e-wWU">
+                            <connections>
+                                <action selector="popupForPeople:" destination="B7t-8J-ukb" id="awA-Vu-TXf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="lableItem" destination="jJD-XI-mYZ" id="7U7-En-FYd"/>
@@ -76,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yt-Tt-g0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053" y="278.25"/>
+            <point key="canvasLocation" x="-25.5" y="99.75"/>
         </scene>
     </scenes>
 </document>
