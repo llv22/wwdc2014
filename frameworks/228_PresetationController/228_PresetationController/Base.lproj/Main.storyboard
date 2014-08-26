@@ -82,8 +82,9 @@
         <!--Table View Controller-->
         <scene sceneID="Dot-EK-fDx">
             <objects>
-                <tableViewController id="yEG-Pb-2nS" customClass="TableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MyTableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yEG-Pb-2nS" customClass="TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bPH-WE-tlP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -104,22 +105,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icy-3s-dfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1732.5" y="99.75"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eTh-Pl-cYc">
-            <objects>
-                <navigationController id="CCx-pe-Efw" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b6h-ug-HzZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="yEG-Pb-2nS" kind="relationship" relationship="rootViewController" id="ibc-cm-1uc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L99-Cy-h3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="802.5" y="99.75"/>
         </scene>
     </scenes>
 </document>

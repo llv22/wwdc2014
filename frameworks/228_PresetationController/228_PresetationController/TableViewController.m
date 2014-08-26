@@ -17,13 +17,12 @@
 
 @implementation TableViewController
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        self->people = @[@"Dima", @"Johannes", @"Jason", @"Gordie", @"Jacob", @"Andy", @"Nic", @"Jim", @"ShuChen", @"Toby", @"Debbie", @"Justin", @"Karl", @"Chris",  @"Marian", @"Ben", @"Colin", @"Morgan", @"Bruce", @"Sophia", @"David", @"Jordan", @"Bill", @"Ian"];
-    }
-    return self;
-}
+//- (id)init {
+//    self = [super init];
+//    if (self) {
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,8 +32,11 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView selectRowAtIndexPath:indexPath animated:@NO scrollPosition:UITableViewScrollPositionNone];
+    if(!self->people){
+        self->people = @[@"Dima", @"Johannes", @"Jason", @"Gordie", @"Jacob", @"Andy", @"Nic", @"Jim", @"ShuChen", @"Toby", @"Debbie", @"Justin", @"Karl", @"Chris",  @"Marian", @"Ben", @"Colin", @"Morgan", @"Bruce", @"Sophia", @"David", @"Jordan", @"Bill", @"Ian"];
+    }
+//    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//    [self.tableView selectRowAtIndexPath:indexPath animated:@NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 - (void)didReceiveMemoryWarning {

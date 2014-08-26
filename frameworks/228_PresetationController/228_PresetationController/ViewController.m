@@ -30,11 +30,11 @@
 - (IBAction)popupForPeople:(id)sender{
     // see http://stackoverflow.com/questions/20490809/instantiating-uitableviewcontroller-in-appdelegate-to-work-with-storyboard-ios
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    TableViewController* contentController = (TableViewController*)[storyboard instantiateInitialViewController];
+    TableViewController* contentController = (TableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"MyTableView"];
     contentController.modalPresentationStyle = UIModalPresentationPopover;
     
     UIPopoverPresentationController *popPC = contentController.popoverPresentationController;
-//    popPC.barButtonItem = item;
+    popPC.barButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:nil];
     popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;
     popPC.delegate = self;
     [self presentViewController:contentController animated:YES completion:nil];
