@@ -8,11 +8,22 @@
 
 #import "TableViewController.h"
 
-@interface TableViewController ()
+// see - http://stackoverflow.com/questions/20544616/static-nsarray-of-strings-how-where-to-initialize-in-a-view-controller
+@interface TableViewController (){
+    NSArray* people;
+}
 
 @end
 
 @implementation TableViewController
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self->people = @[@"Dima", @"Johannes", @"Jason", @"Gordie", @"Jacob", @"Andy", @"Nic", @"Jim", @"ShuChen", @"Toby", @"Debbie", @"Justin", @"Karl", @"Chris",  @"Marian", @"Ben", @"Colin", @"Morgan", @"Bruce", @"Sophia", @"David", @"Jordan", @"Bill", @"Ian"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +33,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView selectRowAtIndexPath:indexPath animated:@NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,20 +51,25 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self->people count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyTableViewCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = self->people[indexPath.row];
     
     return cell;
 }
-*/
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.title = self->people[indexPath.row];
+}
+
 
 /*
 // Override to support conditional editing of the table view.

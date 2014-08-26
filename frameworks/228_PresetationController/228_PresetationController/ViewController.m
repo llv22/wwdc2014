@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TableViewController.h"
 
 @interface ViewController ()
             
@@ -27,7 +28,16 @@
 
 
 - (IBAction)popupForPeople:(id)sender{
-    NSLog(@"click people");
+    // see http://stackoverflow.com/questions/20490809/instantiating-uitableviewcontroller-in-appdelegate-to-work-with-storyboard-ios
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    TableViewController* contentController = (TableViewController*)[storyboard instantiateInitialViewController];
+    contentController.modalPresentationStyle = UIModalPresentationPopover;
+    
+    UIPopoverPresentationController *popPC = contentController.popoverPresentationController;
+//    popPC.barButtonItem = item;
+    popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;
+    popPC.delegate = self;
+    [self presentViewController:contentController animated:YES completion:nil];
 }
 
 @end
