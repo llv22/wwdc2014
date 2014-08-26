@@ -37,9 +37,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="0.99155618686868685" green="0.99155618686868685" blue="0.99155618686868685" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="143" y="278" width="114" height="244"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.91532337463700442" green="0.45966150068100498" blue="1" alpha="0.62" colorSpace="calibratedRGB"/>
