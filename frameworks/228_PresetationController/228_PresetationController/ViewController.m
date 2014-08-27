@@ -34,10 +34,24 @@
     contentController.modalPresentationStyle = UIModalPresentationPopover;
     
     UIPopoverPresentationController *popPC = contentController.popoverPresentationController;
-    popPC.barButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:nil];
+    popPC.sourceView = self.view;
+    popPC.barButtonItem = (UIBarButtonItem*)sender;
     popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;
     popPC.delegate = self;
     [self presentViewController:contentController animated:YES completion:nil];
+}
+
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller{
+    return UIModalPresentationFullScreen;
+}
+
+- (UIViewController *) presentationController:(UIPresentationController *)controller viewControllerForAdaptivePresentationStyle:(UIModalPresentationStyle)style{
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:controller.presentedViewController];
+    return navController;
+}
+
+- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController{
+    NSLog(@"dismiss");
 }
 
 @end

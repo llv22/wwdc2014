@@ -69,7 +69,13 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    self.title = self->people[indexPath.row];
+    if(self.popoverPresentationController != nil){
+//        [self.popoverPresentationController dismissViewControllerAnimated:YES completion:^{
+//        }];
+    }
+//    [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+//        self.presentingViewController.title = self->people[indexPath.row];
+//    }];
 }
 
 
