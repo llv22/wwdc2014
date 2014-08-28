@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.lableItem.text = @"Dima";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,6 +33,7 @@
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     TableViewController* contentController = (TableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"MyTableView"];
     contentController.modalPresentationStyle = UIModalPresentationPopover;
+    contentController.parentVC = self;
     
     UIPopoverPresentationController *popPC = contentController.popoverPresentationController;
     popPC.sourceView = self.view;
@@ -52,6 +54,11 @@
 
 - (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController{
     NSLog(@"dismiss");
+}
+
+- (BOOL)popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController *)popoverPresentationController{
+    NSLog(@"should dismiss");
+    return YES;
 }
 
 @end

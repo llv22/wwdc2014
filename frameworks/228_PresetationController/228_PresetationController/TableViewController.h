@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewController;
+
 @interface TableViewController : UITableViewController
+
+@property(nonatomic, weak) ViewController* parentVC;
 
 @end

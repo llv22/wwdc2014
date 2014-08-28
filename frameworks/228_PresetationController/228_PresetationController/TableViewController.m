@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "ViewController.h"
 
 // see - http://stackoverflow.com/questions/20544616/static-nsarray-of-strings-how-where-to-initialize-in-a-view-controller
 @interface TableViewController (){
@@ -69,13 +70,17 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(self.popoverPresentationController != nil){
-//        [self.popoverPresentationController dismissViewControllerAnimated:YES completion:^{
+//    if(self.popoverPresentationController != nil){
+//        [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+//            self.presentingViewController.title = self->people[indexPath.row];
 //        }];
+//    }
+    if (self.parentVC != nil) {
+        self.parentVC.lableItem.text = self->people[indexPath.row];
     }
-//    [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
-//        self.presentingViewController.title = self->people[indexPath.row];
-//    }];
+    if (self.navigationController != nil){
+        self.navigationController.title = self->people[indexPath.row];
+    }
 }
 
 

@@ -32,36 +32,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-XI-mYZ">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiN-uc-LvQ">
+                                <rect key="frame" x="279" y="289" width="79" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" red="0.81013257575757569" green="0.71543600685002684" blue="0.33917432465093195" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.91532337463700442" green="0.45966150068100498" blue="1" alpha="0.62" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="jJD-XI-mYZ" secondAttribute="centerX" id="pvs-yU-gOS"/>
-                            <constraint firstAttribute="centerY" secondItem="jJD-XI-mYZ" secondAttribute="centerY" id="w3a-Je-Uhh"/>
+                            <constraint firstAttribute="centerY" secondItem="MiN-uc-LvQ" secondAttribute="centerY" constant="-9" id="WJo-75-Pux"/>
+                            <constraint firstAttribute="centerX" secondItem="MiN-uc-LvQ" secondAttribute="centerX" constant="-18.5" id="WmU-wn-Na2"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="jJD-XI-mYZ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="pvs-yU-gOS"/>
-                                <exclude reference="w3a-Je-Uhh"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="jJD-XI-mYZ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="pvs-yU-gOS"/>
-                                <include reference="w3a-Je-Uhh"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Important People" id="86S-1E-6yp">
                         <barButtonItem key="rightBarButtonItem" title="People" id="ttN-5e-wWU">
@@ -71,13 +53,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="lableItem" destination="jJD-XI-mYZ" id="7U7-En-FYd"/>
+                        <outlet property="lableItem" destination="MiN-uc-LvQ" id="M8q-ii-GqE"/>
                         <outlet property="rightButtonItem" destination="ttN-5e-wWU" id="8BV-qd-e1r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yt-Tt-g0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25.5" y="99.75"/>
+            <point key="canvasLocation" x="-26" y="99"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Dot-EK-fDx">
