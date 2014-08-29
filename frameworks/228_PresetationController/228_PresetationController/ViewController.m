@@ -37,7 +37,6 @@
     // see http://stackoverflow.com/questions/20490809/instantiating-uitableviewcontroller-in-appdelegate-to-work-with-storyboard-ios
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     TableViewController* contentController = (TableViewController*)[storyboard instantiateViewControllerWithIdentifier:@"MyTableView"];
-    contentController.title = self.lableItem.text;
     contentController.modalPresentationStyle = UIModalPresentationPopover;
     contentController.parentVC = self;
     
@@ -46,7 +45,9 @@
     popPC.barButtonItem = (UIBarButtonItem*)sender;
     popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;
     popPC.delegate = self;
-    [self presentViewController:contentController animated:YES completion:nil];
+    [self presentViewController:contentController animated:YES completion:^(){
+        contentController.title = self.lableItem.text;
+    }];
 }
 
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller{
