@@ -82,7 +82,6 @@
                             <outlet property="delegate" destination="yEG-Pb-2nS" id="5NI-Jy-ggX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="L2u-Cu-BZI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icy-3s-dfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

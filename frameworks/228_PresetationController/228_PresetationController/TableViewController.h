@@ -13,5 +13,6 @@
 @interface TableViewController : UITableViewController
 
 @property(nonatomic, weak) ViewController* parentVC;
+@property(nonatomic, weak) NSArray* people;
 
 @end
