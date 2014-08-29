@@ -18,8 +18,24 @@ let types = ["book", "CD", "software"];
 R2 – Create a “Customer” struct with a “name” and “email” property
 **/
 // implement code for R2 below
-struct Customer{
-    
+struct Customer : Hashable, Equatable{
+    var name: String;
+    var email: String;
+    var hashValue: Int {
+        let msg = "\(name) \(email)";
+            return msg.hashValue;
+    }
+    func == (lhs: Customer, rhs: Customer) -> Bool{
+    return true;
+//    if (lhs == rhs){
+//    return true;
+//    }
+//    else{
+//    Customer l = lhs as Customer;
+//    Customer r = rhs as Customer;
+//    return l.name==r.name && l.email==r.email;
+//    }
+    }
 }
 
 
@@ -33,7 +49,15 @@ from the dictionary. (Hint: you can use arc4random_uniform to
 randomly select a value.)
 **/
 // implement code for R3 below
-
+func randomCustomer() -> (String, String){
+    let c0 = Customer(name: "ding", email: "or.ding@sap.com");
+    let c1 = Customer(name: "wang", email: "zhongcun.wang@qq.com");
+    let c2 = Customer(name: "wang", email: "mai.wang@nokia.com");
+    let dic = [c0.name:c0, c1.name:c1, c2.name:c2];
+    let key = dic.keys[arc4random_uniform(dic.count())];
+    let c = dic[key];
+    return (c.name, c.email);
+}
 
 
 /**
