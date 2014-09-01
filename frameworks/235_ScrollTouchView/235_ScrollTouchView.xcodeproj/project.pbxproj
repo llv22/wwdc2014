@@ -13,6 +13,7 @@
 		E152F97C19B490BB0051263F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E152F97A19B490BB0051263F /* Main.storyboard */; };
 		E152F97E19B490BB0051263F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E152F97D19B490BB0051263F /* Images.xcassets */; };
 		E152F98A19B490BB0051263F /* _35_ScrollTouchViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E152F98919B490BB0051263F /* _35_ScrollTouchViewTests.m */; };
+		E152F99519B492BB0051263F /* DotView.m in Sources */ = {isa = PBXBuildFile; fileRef = E152F99419B492BB0051263F /* DotView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		E152F98319B490BB0051263F /* 235_ScrollTouchViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 235_ScrollTouchViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E152F98819B490BB0051263F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E152F98919B490BB0051263F /* _35_ScrollTouchViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _35_ScrollTouchViewTests.m; sourceTree = "<group>"; };
+		E152F99319B492BB0051263F /* DotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotView.h; sourceTree = "<group>"; };
+		E152F99419B492BB0051263F /* DotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				E152F97519B490BB0051263F /* AppDelegate.m */,
 				E152F97719B490BB0051263F /* ViewController.h */,
 				E152F97819B490BB0051263F /* ViewController.m */,
+				E152F99319B492BB0051263F /* DotView.h */,
+				E152F99419B492BB0051263F /* DotView.m */,
 				E152F97A19B490BB0051263F /* Main.storyboard */,
 				E152F97D19B490BB0051263F /* Images.xcassets */,
 				E152F97019B490BB0051263F /* Supporting Files */,
@@ -218,6 +223,7 @@
 			files = (
 				E152F97919B490BB0051263F /* ViewController.m in Sources */,
 				E152F97619B490BB0051263F /* AppDelegate.m in Sources */,
+				E152F99519B492BB0051263F /* DotView.m in Sources */,
 				E152F97319B490BB0051263F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
