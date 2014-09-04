@@ -20,7 +20,8 @@
 
 + (DotView*) randomDotView{
     #warning Incomplete method implementation.
-    return nil;
+    DotView* instance = [[DotView alloc]init];
+    return instance;
 }
 
 + (void) arrangeDotsRandomlyInView : (UIView*)view{
