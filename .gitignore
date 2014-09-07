@@ -9,6 +9,11 @@ frameworks/228_PresetationController/228_PresetationController.xcodeproj/xcuserd
 # session 235
 frameworks/235_ScrollTouchView/235_ScrollTouchView.xcodeproj/project.xcworkspace/xcshareddata/
 frameworks/235_ScrollTouchView/235_ScrollTouchView.xcodeproj/project.xcworkspace/xcuserdata/llv23.xcuserdatad/UserInterfaceState.xcuserstate
-frameworks/235_ScrollTouchView/235_ScrollTouchView.xcodeproj/project.pbxproj# swift contest 
-swift/SwiftIDOLOnDemand
-swift/JSONPlayground.playground
+frameworks/235_ScrollTouchView/235_ScrollTouchView.xcodeproj/project.pbxproj
+# swift contest 
+swift/SwiftIDOLOnDemand/
+swift/JSONPlayground.playground/
+swift/SubwayStationPlayground.playground/
+swift/TopCoderPlayground.playground/
+swift/puzzle.txt
+swift/test/
