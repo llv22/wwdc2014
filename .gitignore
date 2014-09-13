@@ -19,3 +19,6 @@ swift/puzzle.txt
 swift/test/
 swift/GithubIssueTracker/
 swift/DancePartyPlayground.playground/
+swift/PantsylvaniaPlayground.playground/
+swift/*.playground/
+swift/XcodeDefault.xctoolchain
