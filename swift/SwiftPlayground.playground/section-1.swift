@@ -11,28 +11,6 @@ for var l = 1; l < 10; l++
     println(l)
 }
 
-/**
- * recurisve algorithm
- *
-func memoize<T: Hashable, U>( body: (T)->U ) -> (T)->U {
-    var memo = Dictionary<T, U>()
-    return { x in
-        if let q = memo[x] { return q }
-        let r = body(x)
-        memo[x] = r
-        return r
-    }
-}
-
-let fibonacci: (Int)->Double = memoize{
-    fibonacci, n in
-    n < 2 ? Double(n) : fibonacci(n-2) + fibonacci(n-1)
-}
-
-
-fibonacci(3)
-*/
-
 // see string of page 10 - 12 of the swift programming language
 let label = "The width is";
 let width = 94;
@@ -451,7 +429,8 @@ protocolValue.simpleDescription;
 func repeat<ItemType>(item: ItemType, times: Int) -> [ItemType]{
     var result = [ItemType]();
     for i in 0 ..< times{
-        result += item;
+//        result += item; // migration from DP4 to DP5
+        result.append(item);
     }
     return result;
 }
@@ -465,11 +444,18 @@ var possibleInteger: OptionalValue<Int> = .None;
 possibleInteger = .Some(100);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 func anyCommonElements <T, U where U: Sequence, T: Sequence, T.GeneratorType.Element: Equatable,
     T.GeneratorType.Element == U.GeneratorType.Element> (lhs: T, rhs: U) -> Bool {
 =======
 func anyCommonElements <T, U where T: Sequence, U: Sequence, T.GeneratorType.Element: Equatable, T.GeneratorType.Element == U.GeneratorType.Element> (lhs: T, rhs: U) -> Bool {
 >>>>>>> 5deac4920cd3504745130f19f381cbbcce385915
+=======
+//migration from DP4 to DP5
+//func anyCommonElements <T, U where T: Sequence, U: Sequence, T.GeneratorType.Element: Equatable, T.GeneratorType.Element == U.GeneratorType.Element >
+func anyCommonElements <T, U where T: SequenceType, U: SequenceType, T.Generator.Element: Equatable, T.Generator.Element == U.Generator.Element >
+    (lhs: T, rhs: U) -> Bool {
+>>>>>>> 6d936514c546a23c5edf8c98137fd8945c2bcb2f
         for lhsItem in lhs {
             for rhsItem in rhs {
                 if lhsItem == rhsItem {

@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIPopoverPresentationControllerDelegate>
 
+@property (nonatomic, strong) IBOutlet UIBarButtonItem* rightButtonItem;
+@property (nonatomic, strong) IBOutlet UILabel* lableItem;
+
+@property (nonatomic, strong) NSArray* people;
+
+- (IBAction)popupForPeople:(id)sender;
 
 @end
 

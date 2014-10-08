@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1538C8519AC3A7500D1572D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1538C8419AC3A7500D1572D /* TableViewController.m */; };
 		F17A41A6195ED22600E70283 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A41A5195ED22600E70283 /* main.m */; };
 		F17A41A9195ED22600E70283 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A41A8195ED22600E70283 /* AppDelegate.m */; };
 		F17A41AC195ED22600E70283 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A41AB195ED22600E70283 /* ViewController.m */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1538C8319AC3A7500D1572D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		E1538C8419AC3A7500D1572D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		E18CA10319ACAA0B00B19F84 /* readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = readme.rtf; sourceTree = "<group>"; };
 		F17A41A0195ED22600E70283 /* 228_PresetationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 228_PresetationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17A41A4195ED22600E70283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F17A41A5195ED22600E70283 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		F17A4197195ED22600E70283 = {
 			isa = PBXGroup;
 			children = (
+				E18CA10319ACAA0B00B19F84 /* readme.rtf */,
 				F17A41A2195ED22600E70283 /* 228_PresetationController */,
 				F17A41B9195ED22600E70283 /* 228_PresetationControllerTests */,
 				F17A41A1195ED22600E70283 /* Products */,
@@ -83,6 +88,8 @@
 				F17A41A8195ED22600E70283 /* AppDelegate.m */,
 				F17A41AA195ED22600E70283 /* ViewController.h */,
 				F17A41AB195ED22600E70283 /* ViewController.m */,
+				E1538C8319AC3A7500D1572D /* TableViewController.h */,
+				E1538C8419AC3A7500D1572D /* TableViewController.m */,
 				F17A41AD195ED22600E70283 /* Main.storyboard */,
 				F17A41B0195ED22600E70283 /* Images.xcassets */,
 				F17A41A3195ED22600E70283 /* Supporting Files */,
@@ -218,6 +225,7 @@
 				F17A41AC195ED22600E70283 /* ViewController.m in Sources */,
 				F17A41A9195ED22600E70283 /* AppDelegate.m in Sources */,
 				F17A41A6195ED22600E70283 /* main.m in Sources */,
+				E1538C8519AC3A7500D1572D /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +414,7 @@
 				F17A41C2195ED22600E70283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F17A41C3195ED22600E70283 /* Build configuration list for PBXNativeTarget "228_PresetationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +423,7 @@
 				F17A41C5195ED22600E70283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
