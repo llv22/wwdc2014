@@ -23,6 +23,10 @@
 		E161BDE51A1F08E4002A8377 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E161BDE41A1F08E4002A8377 /* Interface.storyboard */; };
 		E161BDE71A1F08E4002A8377 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E161BDE61A1F08E4002A8377 /* Images.xcassets */; };
 		E161BDEA1A1F08E4002A8377 /* MyApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E161BDCB1A1F08E2002A8377 /* MyApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E161BDF71A1F0FFB002A8377 /* CityRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E161BDF61A1F0FFB002A8377 /* CityRowController.m */; };
+		E161BDF91A1F117D002A8377 /* LocationMarker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E161BDF81A1F117D002A8377 /* LocationMarker@2x.png */; };
+		E161BDFC1A1F123B002A8377 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E161BDFB1A1F123B002A8377 /* GlanceController.m */; };
+		E161BDFF1A1F19BC002A8377 /* CityObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E161BDFE1A1F19BC002A8377 /* CityObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,13 @@
 		E161BDE31A1F08E4002A8377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E161BDE41A1F08E4002A8377 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		E161BDE61A1F08E4002A8377 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E161BDF51A1F0FFB002A8377 /* CityRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityRowController.h; sourceTree = "<group>"; };
+		E161BDF61A1F0FFB002A8377 /* CityRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityRowController.m; sourceTree = "<group>"; };
+		E161BDF81A1F117D002A8377 /* LocationMarker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LocationMarker@2x.png"; path = "../../../../../../../Volumes/VMware Shared Folders/Downloads/wwdc2014/watchkit/LocationMarker@2x.png"; sourceTree = "<group>"; };
+		E161BDFA1A1F123B002A8377 /* GlanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		E161BDFB1A1F123B002A8377 /* GlanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		E161BDFD1A1F19BC002A8377 /* CityObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityObject.h; sourceTree = "<group>"; };
+		E161BDFE1A1F19BC002A8377 /* CityObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +210,12 @@
 			children = (
 				E161BDD31A1F08E3002A8377 /* InterfaceController.h */,
 				E161BDD41A1F08E3002A8377 /* InterfaceController.m */,
+				E161BDF51A1F0FFB002A8377 /* CityRowController.h */,
+				E161BDF61A1F0FFB002A8377 /* CityRowController.m */,
+				E161BDFA1A1F123B002A8377 /* GlanceController.h */,
+				E161BDFB1A1F123B002A8377 /* GlanceController.m */,
+				E161BDFD1A1F19BC002A8377 /* CityObject.h */,
+				E161BDFE1A1F19BC002A8377 /* CityObject.m */,
 				E161BDD61A1F08E3002A8377 /* NotificationController.h */,
 				E161BDD71A1F08E3002A8377 /* NotificationController.m */,
 				E161BDD91A1F08E4002A8377 /* Images.xcassets */,
@@ -219,6 +236,7 @@
 		E161BDE11A1F08E4002A8377 /* MyApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				E161BDF81A1F117D002A8377 /* LocationMarker@2x.png */,
 				E161BDE41A1F08E4002A8377 /* Interface.storyboard */,
 				E161BDE61A1F08E4002A8377 /* Images.xcassets */,
 				E161BDE21A1F08E4002A8377 /* Supporting Files */,
@@ -385,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E161BDF91A1F117D002A8377 /* LocationMarker@2x.png in Resources */,
 				E161BDE51A1F08E4002A8377 /* Interface.storyboard in Resources */,
 				E161BDE71A1F08E4002A8377 /* Images.xcassets in Resources */,
 			);
@@ -416,8 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E161BDFF1A1F19BC002A8377 /* CityObject.m in Sources */,
+				E161BDF71A1F0FFB002A8377 /* CityRowController.m in Sources */,
 				E161BDD81A1F08E3002A8377 /* NotificationController.m in Sources */,
 				E161BDD51A1F08E3002A8377 /* InterfaceController.m in Sources */,
+				E161BDFC1A1F123B002A8377 /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

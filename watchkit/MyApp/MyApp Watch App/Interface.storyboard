@@ -12,15 +12,62 @@
                     <items>
                         <table alignment="left" layout="vertical" id="gV2-0N-WH0">
                             <items>
-                                <tableRow id="ka3-9h-eG5">
-                                    <group key="rootItem" width="1" alignment="left" id="P23-3S-53Q"/>
+                                <tableRow identifier="default" id="ka3-9h-eG5" customClass="CityRowController">
+                                    <group key="rootItem" width="1" alignment="left" spacing="6" id="P23-3S-53Q">
+                                        <items>
+                                            <imageView width="40" height="40" alignment="left" image="LocationMarker.png" id="cO7-BH-oKe"/>
+                                            <label alignment="left" verticalAlignment="center" text="Location" id="Tky-AE-6QT"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cityLabel" destination="Tky-AE-6QT" id="ZEt-r1-oqC"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="locationTable" destination="gV2-0N-WH0" id="SsM-oJ-Lt2"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="163"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="u9O-oA-qyx">
+            <objects>
+                <glanceController id="ltK-Yu-umm">
+                    <items>
+                        <group alignment="left" id="eXS-xW-IGa"/>
+                        <group alignment="left" id="wiT-mh-lOo"/>
+                    </items>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="220" y="401"/>
+        </scene>
+        <!--GlanceControllerIdentifier-->
+        <scene sceneID="uF0-eV-VLg">
+            <objects>
+                <controller identifier="GlanceControllerIdentifier" id="0Kc-MQ-CbB" customClass="GlanceController">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="Zof-yV-JTr">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Label" id="I6M-um-Xmn"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="B4K-h0-YYX">
+                            <items>
+                                <map alignment="left" id="YSZ-nm-Ina"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cityLabel" destination="I6M-um-Xmn" id="kHD-uY-uAX"/>
+                        <outlet property="cityMap" destination="YSZ-nm-Ina" id="xKu-Pk-e28"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="428" y="401"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
