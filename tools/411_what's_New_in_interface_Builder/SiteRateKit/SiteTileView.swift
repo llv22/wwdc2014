@@ -45,7 +45,7 @@ class SiteTileView: UIView {
         }
         backgroundRingLayer.frame = layer.bounds
         
-        if !(ringLayer != nil) {
+        if (ringLayer == nil) {
             ringLayer = CAShapeLayer()
             
             let innerRect = CGRectInset(bounds, CGFloat(lineWidth / 2.0), CGFloat(lineWidth / 2.0))
