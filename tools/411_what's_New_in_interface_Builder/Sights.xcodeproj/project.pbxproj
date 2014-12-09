@@ -119,6 +119,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E13F48E91A36E0FD003BCCB1 /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TestImages;
+			sourceTree = "<group>";
+		};
 		F13E2406198CCE1200CB6BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +134,7 @@
 				F13E2424198CCE1200CB6BD0 /* SightsTests */,
 				F1F06434198E4BC600F17FAC /* SiteRateKit */,
 				F1F06441198E4BC600F17FAC /* SiteRateKitTests */,
+				E13F48E91A36E0FD003BCCB1 /* TestImages */,
 				F13E2410198CCE1200CB6BD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -709,6 +717,7 @@
 				F1F0644D198E4BC600F17FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F06451198E4BC600F17FAC /* Build configuration list for PBXNativeTarget "SiteRateKitTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +726,7 @@
 				F1F0644F198E4BC600F17FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

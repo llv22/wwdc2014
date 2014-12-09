@@ -14,18 +14,23 @@ class SiteTileView: UIView {
     var backgroundRingLayer: CAShapeLayer!
     var ringLayer: CAShapeLayer!
     
+    var imageLayer: CALayer!
+    var image: UIImage? {
+        didSet { updateLayerProperties() }
+    }
+    
     @IBInspectable var rating: Double = 0.6 {
-    didSet { updateLayerProperties()}
+    didSet { updateLayerProperties() }
     }
     var lineWidth: Double = 10.0 {
-    didSet { updateLayerProperties()}
+    didSet { updateLayerProperties() }
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
         //see add ringlayer
-        if !backgroundRingLayer {
+        if !(backgroundRingLayer != nil) {
             backgroundRingLayer = CAShapeLayer()
             layer.addSublayer(backgroundRingLayer)
             
@@ -40,7 +45,7 @@ class SiteTileView: UIView {
         }
         backgroundRingLayer.frame = layer.bounds
         
-        if !ringLayer {
+        if !(ringLayer != nil) {
             ringLayer = CAShapeLayer()
             
             let innerRect = CGRectInset(bounds, CGFloat(lineWidth / 2.0), CGFloat(lineWidth / 2.0))
@@ -56,11 +61,29 @@ class SiteTileView: UIView {
         }
         ringLayer.frame = layer.bounds
         
+        if (imageLayer == nil) {
+            let imageMaskLayer = CAShapeLayer()
+            let insetBounds = CGRectInset(bounds, CGFloat(lineWidth + 3.0), CGFloat(lineWidth + 3.0))
+            let innerPath = UIBezierPath(ovalInRect: insetBounds)
+            
+            imageMaskLayer.path = innerPath.CGPath
+            imageMaskLayer.fillColor = UIColor.blackColor().CGColor
+            imageMaskLayer.frame = bounds
+            layer.addSublayer(imageMaskLayer)
+            
+            imageLayer = CALayer()
+            imageLayer.mask = imageMaskLayer
+            imageLayer.frame = bounds
+            imageLayer.backgroundColor = UIColor.lightGrayColor().CGColor
+            imageLayer.contentsGravity = kCAGravityResizeAspectFill
+            layer.addSublayer(imageLayer)
+        }
+        
         updateLayerProperties()
     }
     
     func updateLayerProperties(){
-        if ringLayer {
+        if (ringLayer != nil) {
             ringLayer.strokeEnd = CGFloat(rating)
             
             var storkeColor = UIColor.lightGrayColor()
@@ -75,6 +98,25 @@ class SiteTileView: UIView {
                 storkeColor = UIColor(hue: 359.0/360.0, saturation: 0.48, brightness: 0.63, alpha: 1.0);
             }
             ringLayer.strokeColor = storkeColor.CGColor
+        }
+        
+        if (imageLayer != nil) {
+            if  let i  = image {
+                imageLayer.contents = i.CGImage
+            }
+        }
+    }
+    
+    // desc - method only be called in design time
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        
+        let projectPaths = (NSProcessInfo.processInfo().environment["IB_PROJECT_SOURCE_DIRECTORIES"] as String).componentsSeparatedByString(",")
+        if (projectPaths.count > 0) {
+            if let projectPath = projectPaths[0] as String? {
+                let imagePath =  projectPath.stringByAppendingPathComponent("TestImages/London.jpg")
+                image = UIImage(contentsOfFile: imagePath)
+            }
         }
     }
     
