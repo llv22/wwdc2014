@@ -16,7 +16,9 @@ class SiteTileView: UIView {
     
     var imageLayer: CALayer!
     var image: UIImage? {
-        didSet { updateLayerProperties() }
+        didSet {
+            updateLayerProperties()
+        }
     }
     
     @IBInspectable var rating: Double = 0.6 {
@@ -118,6 +120,7 @@ class SiteTileView: UIView {
             if let projectPath = projectPaths[0] as String? {
                 let imagePath =  projectPath.stringByAppendingPathComponent("TestImages/London.jpg")
                 image = UIImage(contentsOfFile: imagePath)
+                assert(image != nil, "image exists")
             }
         }
     }
