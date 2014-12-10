@@ -113,6 +113,7 @@ class SiteTileView: UIView {
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
+//        desc - TARGET_INTERFACE_BUILDER doesn't exist as documentation described
 //        #if TARGET_INTERFACE_BUILDER
 //        #endif
         let projectPaths = (NSProcessInfo.processInfo().environment["IB_PROJECT_SOURCE_DIRECTORIES"] as String).componentsSeparatedByString(",")
