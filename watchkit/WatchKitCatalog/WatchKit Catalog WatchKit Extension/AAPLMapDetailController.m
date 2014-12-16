@@ -72,8 +72,8 @@
     
     MKMapPoint newCenterPoint = MKMapPointForCoordinate(coordinate);
     
-    [self.map setMapRect:MKMapRectMake(newCenterPoint.x, newCenterPoint.y, self.currentSpan.latitudeDelta, self.currentSpan.longitudeDelta)];
-    [self.map setCoordinateRegion:region];
+    [self.map setVisibleMapRect:MKMapRectMake(newCenterPoint.x, newCenterPoint.y, self.currentSpan.latitudeDelta, self.currentSpan.longitudeDelta)];
+    [self.map setRegion:region];
 }
 
 - (IBAction)zoomOut {
@@ -81,7 +81,7 @@
     MKCoordinateRegion region = MKCoordinateRegionMake(self.currentRegion.center, span);
 
     self.currentSpan = span;
-    [self.map setCoordinateRegion:region];
+    [self.map setRegion:region];
 }
 
 - (IBAction)zoomIn {
@@ -89,7 +89,7 @@
     MKCoordinateRegion region = MKCoordinateRegionMake(self.currentRegion.center, span);
     
     self.currentSpan = span;
-    [self.map setCoordinateRegion:region];
+    [self.map setRegion:region];
 }
 
 - (IBAction)addPinAnnotations {
@@ -106,13 +106,13 @@
     CLLocationCoordinate2D firstCoordinate = CLLocationCoordinate2DMake(self.currentRegion.center.latitude, self.currentRegion.center.longitude - 0.3f);
     
     // Uses image in Watch app bundle.
-    [self.map addAnnotation:firstCoordinate withImageNamed:@"Whale"];
+    [self.map addAnnotation:firstCoordinate withImageNamed:@"Whale" centerOffset:CGPointMake(0.0f, 0.0f)];
     
     CLLocationCoordinate2D secondCoordinate = CLLocationCoordinate2DMake(self.currentRegion.center.latitude, self.currentRegion.center.longitude + 0.3f);
     
     // Uses image in WatchKit Extension bundle.
     UIImage *image = [UIImage imageNamed:@"Bumblebee"];
-    [self.map addAnnotation:secondCoordinate withImage:image];
+    [self.map addAnnotation:secondCoordinate withImage:image centerOffset:CGPointMake(0.0f, 0.0f)];
 }
 
 - (IBAction)removeAll {
