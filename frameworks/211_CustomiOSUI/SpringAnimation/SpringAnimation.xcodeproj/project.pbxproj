@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E117264F1A417E2A0038DCCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E117264E1A417E2A0038DCCE /* main.m */; };
+		E11726521A417E2A0038DCCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E11726511A417E2A0038DCCE /* AppDelegate.m */; };
+		E11726551A417E2A0038DCCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11726541A417E2A0038DCCE /* ViewController.m */; };
+		E11726581A417E2A0038DCCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11726561A417E2A0038DCCE /* Main.storyboard */; };
+		E117265A1A417E2A0038DCCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11726591A417E2A0038DCCE /* Images.xcassets */; };
+		E117265D1A417E2A0038DCCE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E117265B1A417E2A0038DCCE /* LaunchScreen.xib */; };
+		E11726691A417E2B0038DCCE /* SpringAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E11726681A417E2B0038DCCE /* SpringAnimationTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E11726631A417E2B0038DCCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E11726411A417E2A0038DCCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E11726481A417E2A0038DCCE;
+			remoteInfo = SpringAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E11726491A417E2A0038DCCE /* SpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E117264D1A417E2A0038DCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E117264E1A417E2A0038DCCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E11726501A417E2A0038DCCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E11726511A417E2A0038DCCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E11726531A417E2A0038DCCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E11726541A417E2A0038DCCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E11726571A417E2A0038DCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E11726591A417E2A0038DCCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E117265C1A417E2A0038DCCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E11726621A417E2B0038DCCE /* SpringAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpringAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11726671A417E2B0038DCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11726681A417E2B0038DCCE /* SpringAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringAnimationTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11726461A417E2A0038DCCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E117265F1A417E2B0038DCCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E11726401A417E2A0038DCCE = {
+			isa = PBXGroup;
+			children = (
+				E117264B1A417E2A0038DCCE /* SpringAnimation */,
+				E11726651A417E2B0038DCCE /* SpringAnimationTests */,
+				E117264A1A417E2A0038DCCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E117264A1A417E2A0038DCCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11726491A417E2A0038DCCE /* SpringAnimation.app */,
+				E11726621A417E2B0038DCCE /* SpringAnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E117264B1A417E2A0038DCCE /* SpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E11726501A417E2A0038DCCE /* AppDelegate.h */,
+				E11726511A417E2A0038DCCE /* AppDelegate.m */,
+				E11726531A417E2A0038DCCE /* ViewController.h */,
+				E11726541A417E2A0038DCCE /* ViewController.m */,
+				E11726561A417E2A0038DCCE /* Main.storyboard */,
+				E11726591A417E2A0038DCCE /* Images.xcassets */,
+				E117265B1A417E2A0038DCCE /* LaunchScreen.xib */,
+				E117264C1A417E2A0038DCCE /* Supporting Files */,
+			);
+			path = SpringAnimation;
+			sourceTree = "<group>";
+		};
+		E117264C1A417E2A0038DCCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E117264D1A417E2A0038DCCE /* Info.plist */,
+				E117264E1A417E2A0038DCCE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E11726651A417E2B0038DCCE /* SpringAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E11726681A417E2B0038DCCE /* SpringAnimationTests.m */,
+				E11726661A417E2B0038DCCE /* Supporting Files */,
+			);
+			path = SpringAnimationTests;
+			sourceTree = "<group>";
+		};
+		E11726661A417E2B0038DCCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E11726671A417E2B0038DCCE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11726481A417E2A0038DCCE /* SpringAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E117266C1A417E2B0038DCCE /* Build configuration list for PBXNativeTarget "SpringAnimation" */;
+			buildPhases = (
+				E11726451A417E2A0038DCCE /* Sources */,
+				E11726461A417E2A0038DCCE /* Frameworks */,
+				E11726471A417E2A0038DCCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpringAnimation;
+			productName = SpringAnimation;
+			productReference = E11726491A417E2A0038DCCE /* SpringAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E11726611A417E2B0038DCCE /* SpringAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E117266F1A417E2B0038DCCE /* Build configuration list for PBXNativeTarget "SpringAnimationTests" */;
+			buildPhases = (
+				E117265E1A417E2B0038DCCE /* Sources */,
+				E117265F1A417E2B0038DCCE /* Frameworks */,
+				E11726601A417E2B0038DCCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11726641A417E2B0038DCCE /* PBXTargetDependency */,
+			);
+			name = SpringAnimationTests;
+			productName = SpringAnimationTests;
+			productReference = E11726621A417E2B0038DCCE /* SpringAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11726411A417E2A0038DCCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = llv23;
+				TargetAttributes = {
+					E11726481A417E2A0038DCCE = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 84Z8KQ6A9Q;
+					};
+					E11726611A417E2B0038DCCE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = E11726481A417E2A0038DCCE;
+					};
+				};
+			};
+			buildConfigurationList = E11726441A417E2A0038DCCE /* Build configuration list for PBXProject "SpringAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11726401A417E2A0038DCCE;
+			productRefGroup = E117264A1A417E2A0038DCCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11726481A417E2A0038DCCE /* SpringAnimation */,
+				E11726611A417E2B0038DCCE /* SpringAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11726471A417E2A0038DCCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11726581A417E2A0038DCCE /* Main.storyboard in Resources */,
+				E117265D1A417E2A0038DCCE /* LaunchScreen.xib in Resources */,
+				E117265A1A417E2A0038DCCE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11726601A417E2B0038DCCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11726451A417E2A0038DCCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11726551A417E2A0038DCCE /* ViewController.m in Sources */,
+				E11726521A417E2A0038DCCE /* AppDelegate.m in Sources */,
+				E117264F1A417E2A0038DCCE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E117265E1A417E2B0038DCCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11726691A417E2B0038DCCE /* SpringAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E11726641A417E2B0038DCCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E11726481A417E2A0038DCCE /* SpringAnimation */;
+			targetProxy = E11726631A417E2B0038DCCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E11726561A417E2A0038DCCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11726571A417E2A0038DCCE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E117265B1A417E2A0038DCCE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E117265C1A417E2A0038DCCE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E117266A1A417E2B0038DCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E117266B1A417E2B0038DCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E117266D1A417E2B0038DCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SpringAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E117266E1A417E2B0038DCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SpringAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E11726701A417E2B0038DCCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpringAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpringAnimation.app/SpringAnimation";
+			};
+			name = Debug;
+		};
+		E11726711A417E2B0038DCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpringAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpringAnimation.app/SpringAnimation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11726441A417E2A0038DCCE /* Build configuration list for PBXProject "SpringAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E117266A1A417E2B0038DCCE /* Debug */,
+				E117266B1A417E2B0038DCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E117266C1A417E2B0038DCCE /* Build configuration list for PBXNativeTarget "SpringAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E117266D1A417E2B0038DCCE /* Debug */,
+				E117266E1A417E2B0038DCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E117266F1A417E2B0038DCCE /* Build configuration list for PBXNativeTarget "SpringAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11726701A417E2B0038DCCE /* Debug */,
+				E11726711A417E2B0038DCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E11726411A417E2A0038DCCE /* Project object */;
+}
