@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E19306D41A37DE8D0075C358 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19306D31A37DE8D0075C358 /* CoreFoundation.framework */; };
+		E19306DB1A37E1010075C358 /* Hawall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E19306D71A37E1010075C358 /* Hawall.jpg */; };
+		E19306DC1A37E1010075C358 /* London.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E19306D81A37E1010075C358 /* London.jpg */; };
+		E19306DD1A37E1010075C358 /* NY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E19306D91A37E1010075C358 /* NY.jpg */; };
+		E19306DE1A37E1010075C358 /* Sights List.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E19306DA1A37E1010075C358 /* Sights List.jpg */; };
 		F13E2415198CCE1200CB6BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E2414198CCE1200CB6BD0 /* AppDelegate.swift */; };
 		F13E2417198CCE1200CB6BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E2416198CCE1200CB6BD0 /* ViewController.swift */; };
 		F13E241A198CCE1200CB6BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F13E2418198CCE1200CB6BD0 /* Main.storyboard */; };
@@ -66,6 +71,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E19306D31A37DE8D0075C358 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E19306D71A37E1010075C358 /* Hawall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hawall.jpg; sourceTree = "<group>"; };
+		E19306D81A37E1010075C358 /* London.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = London.jpg; sourceTree = "<group>"; };
+		E19306D91A37E1010075C358 /* NY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NY.jpg; sourceTree = "<group>"; };
+		E19306DA1A37E1010075C358 /* Sights List.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sights List.jpg"; sourceTree = "<group>"; };
 		F13E240F198CCE1200CB6BD0 /* Sights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13E2413198CCE1200CB6BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F13E2414198CCE1200CB6BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19306D41A37DE8D0075C358 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +130,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E19306D51A37DEB80075C358 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E19306D31A37DE8D0075C358 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E19306D61A37E1010075C358 /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+				E19306D71A37E1010075C358 /* Hawall.jpg */,
+				E19306D81A37E1010075C358 /* London.jpg */,
+				E19306D91A37E1010075C358 /* NY.jpg */,
+				E19306DA1A37E1010075C358 /* Sights List.jpg */,
+			);
+			path = TestImages;
+			sourceTree = "<group>";
+		};
 		F13E2406198CCE1200CB6BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +157,8 @@
 				F13E2424198CCE1200CB6BD0 /* SightsTests */,
 				F1F06434198E4BC600F17FAC /* SiteRateKit */,
 				F1F06441198E4BC600F17FAC /* SiteRateKitTests */,
+				E19306D61A37E1010075C358 /* TestImages */,
+				E19306D51A37DEB80075C358 /* Frameworks */,
 				F13E2410198CCE1200CB6BD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -355,8 +387,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19306DD1A37E1010075C358 /* NY.jpg in Resources */,
 				F13E241A198CCE1200CB6BD0 /* Main.storyboard in Resources */,
+				E19306DE1A37E1010075C358 /* Sights List.jpg in Resources */,
+				E19306DB1A37E1010075C358 /* Hawall.jpg in Resources */,
 				F13E241C198CCE1200CB6BD0 /* Images.xcassets in Resources */,
+				E19306DC1A37E1010075C358 /* London.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +745,7 @@
 				F1F0644D198E4BC600F17FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F06451198E4BC600F17FAC /* Build configuration list for PBXNativeTarget "SiteRateKitTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +754,7 @@
 				F1F0644F198E4BC600F17FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
