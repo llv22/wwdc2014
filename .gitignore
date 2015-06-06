@@ -21,6 +21,11 @@ swift/GithubIssueTracker/
 swift/DancePartyPlayground.playground/
 swift/PantsylvaniaPlayground.playground/
 swift/*.playground/
+!swift/CurryPlayground.playground/
+#to avoid xcworkspace
+playground.xcworkspace/
+!contents.xcplayground
+!timeline.xctimeline
 swift/XcodeDefault.xctoolchain
 swift/TopCoderChallengeAlert/
 swift/TopCoderAlert.xcworkspace/
