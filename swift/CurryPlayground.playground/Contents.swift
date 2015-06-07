@@ -17,7 +17,6 @@ let greaterThan10 = greaterThan(10)
 greaterThan10(input: 13)
 greaterThan10(input: 5)
 
-
 //see: curring for target-action selector in swift, by Ole Begemann
 protocol TargetAction {
     func performAction()
@@ -56,4 +55,9 @@ class Control {
     }
 }
 
-
+//see : https://robots.thoughtbot.com/introduction-to-function-currying-in-swift
+let xs = 1...100
+func add(a: Int)(b: Int) -> Int {
+    return a + b
+}
+let x = xs.map(add(2))

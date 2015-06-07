@@ -3,47 +3,35 @@
 xcuserdata/
 xcshareddata/
 *.xcuserdatad/
+*.xcworkspace/
 
 # session 404
-swift/SwiftAdvanced/SwiftAdvanced.xcodeproj/xcuserdata/i058959.xcuserdatad/
-swift/SwiftAdvanced/SwiftAdvanced.xcodeproj/project.xcworkspace/xcshareddata/
-swift/SwiftAdvanced/SwiftAdvanced.xcodeproj/project.xcworkspace/xcuserdata/i058959.xcuserdatad/
 
 # session 228
-frameworks/228_PresetationController/228_PresetationController.xcodeproj/project.xcworkspace/xcshareddata/
-frameworks/228_PresetationController/228_PresetationController.xcodeproj/project.xcworkspace/xcuserdata/llv23.xcuserdatad/
 frameworks/228_PresetationController/228_PresetationController.xcodeproj/xcuserdata/llv23.xcuserdatad/
 
 # session 235
-frameworks/235_ScrollTouchView/235_ScrollTouchView.xcodeproj/project.xcworkspace/xcshareddata/
-frameworks/235_ScrollTouchView/235_ScrollTouchView.xcodeproj/project.xcworkspace/xcuserdata/llv23.xcuserdatad/UserInterfaceState.xcuserstate
 frameworks/235_ScrollTouchView/235_ScrollTouchView.xcodeproj/project.pbxproj
 
-# swift contest 
+# session 411
+
+# swift contest playarounds
 swift/SwiftIDOLOnDemand/
-swift/JSONPlayground.playground/
-swift/SubwayStationPlayground.playground/
-swift/TopCoderPlayground.playground/
 swift/puzzle.txt
-swift/test/
 swift/GithubIssueTracker/
-swift/DancePartyPlayground.playground/
-swift/PantsylvaniaPlayground.playground/
-swift/*.playground/
+XcodeDefault.xctoolchain
+swift/TopCoderChallengeAlert/
+swift/TopCoderChallengeAlert.zip
+*.playground/
+*.xcworkspace/
+
+# include swift learning playaround
 !swift/CurryPlayground.playground/
-#to avoid xcworkspace
+
+# avoid xcworkspace and other language support
 playground.xcworkspace/
 !contents.xcplayground
 !timeline.xctimeline
-swift/XcodeDefault.xctoolchain
-swift/TopCoderChallengeAlert/
-swift/TopCoderAlert.xcworkspace/
-swift/TopCoderChallengeAlert.zip
 
 # watchkit programming
-MyApp/MyApp.xcodeproj/project.xcworkspace/xcuserdata/
-watchkit/MyApp/MyApp.xcodeproj/project.xcworkspace/xcuserdata/llv23.xcuserdatad/WorkspaceSettings.xcsettings
-watchkit/MyApp/MyApp.xcodeproj/xcuserdata/llv23.xcuserdatad/xcdebugger/
-
-# session 411
 
