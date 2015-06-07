@@ -61,3 +61,38 @@ func add(a: Int)(b: Int) -> Int {
     return a + b
 }
 let x = xs.map(add(2))
+
+//see : if don't own object
+extension NSNumber {
+    class func add(a: NSNumber, b: NSNumber) -> NSNumber {
+        return NSNumber(integer: a.integerValue + b.integerValue);
+    }
+}
+func curry(localAdd: (NSNumber, NSNumber) -> NSNumber) -> (NSNumber -> (NSNumber -> NSNumber)) {
+    return {
+        a in {
+            b in
+            return localAdd(a, b)
+        }
+    }
+}
+let curriedAdd = curry(NSNumber.add)
+let addTwo = curriedAdd(2)
+//var xs1 = Array<NSNumber>(count: 100, repeatedValue: 1)
+var xs0 = [NSNumber]()
+for i in xs {
+    xs0.append(NSNumber(integer: i))
+}
+let xs1 = xs0
+let x1 = xs1.map(addTwo)
+
+func gcurry<A, B, C>(f: (A, B) -> C) -> (A -> (B -> C)) {
+    return {
+        a in {
+            b in
+            return f(a, b)
+        }
+    }
+}
+let gadd = gcurry(NSNumber.add)
+let x2 = xs1.map(gadd(2))
