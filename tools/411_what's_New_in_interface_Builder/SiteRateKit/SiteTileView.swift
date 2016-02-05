@@ -116,10 +116,10 @@ class SiteTileView: UIView {
 //        desc - TARGET_INTERFACE_BUILDER doesn't exist as documentation described
 //        #if TARGET_INTERFACE_BUILDER
 //        #endif
-        let projectPaths = (NSProcessInfo.processInfo().environment["IB_PROJECT_SOURCE_DIRECTORIES"] as String).componentsSeparatedByString(",")
+        let projectPaths = (NSProcessInfo.processInfo().environment["IB_PROJECT_SOURCE_DIRECTORIES"]! as String).componentsSeparatedByString(",")
         if (projectPaths.count > 0) {
             if let projectPath = projectPaths[0] as String? {
-                let imagePath =  projectPath.stringByAppendingPathComponent("TestImages/London.jpg")
+                let imagePath =  projectPath.stringByAppendingString("TestImages/London.jpg")
                 image = UIImage(contentsOfFile: imagePath)
                 assert(image != nil, "image exists")
             }
